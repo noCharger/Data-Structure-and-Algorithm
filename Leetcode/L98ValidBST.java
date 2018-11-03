@@ -39,7 +39,10 @@
 // level: medium
 // Time cost: O(n) traverse all node
 // Space cost: O(n) recursion stack
-
+// Methodology: 1. use Preorder traversal
+//              2. helper(root, min, max)
+//                  a. if go right, update min <- root.val
+//                  b. if go left, update max <- root.val
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
